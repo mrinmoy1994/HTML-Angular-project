@@ -1,0 +1,47 @@
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" *ngIf="show">
+            <div id="dismiss" (click)="dismissToggle()">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <!-- <h3>Captain X</h3> -->
+                <img class="logo" src="assets/image/logo.png" alt="CompanyLOGO" style="height: 25px;"/>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active" [class.active]="router.url==='/home'">
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li class="active" [class.active]="router.url==='/aboutus'">
+                  <a routerLink="/aboutus">About</a>
+                </li>
+                <li class="active" [class.active]="router.url==='/contactus'" >
+                  <a routerLink="/contactus">Contact</a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+        <!-- Page Content  -->
+
+          <header>
+          <div class="headerContainer">
+    
+            <button type="button" id="sidebarCollapse" class="btn btn-info" (click)="buttonToggle()" style="background-color: rgb(24, 38, 80);border: rgb(24, 38, 80)">
+              <i class="fas fa-align-left"></i>
+          </button>
+            <!----label style="font-size: 17px">CaptainX</label-->
+            <img class="logo" src="assets/image/logo.png" alt="CompanyLOGO" style="height: 35px;"/>
+            
+            <span class="header-right">
+              <a routerLink="/home">Home</a>
+              <a routerLink="/#">Refer</a>
+              <a routerLink="/#">Gift</a>
+              <a routerLink="/aboutus">About Us</a>
+              <a routerLink="/anchorLinkID">FAQs</a>
+              
+            </span>
+          </div>
+        </header>
+ 

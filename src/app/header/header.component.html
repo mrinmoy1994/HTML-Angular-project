@@ -1,0 +1,40 @@
+<header id="myHeader" #myHeader >
+    <div class="row" style="margin: 0 !important;">
+        <div class="col-md-5 bannerlogo">
+          <img style="padding-top: 3%;height: 80%; width: 40%;" src="assets/image/LOGO2.png"/>
+        </div>
+        <div class="col-md-1" >
+        </div>
+        <div class="col-md-1 bannertext2" style="text-align: right;font-weight: 500;" (click)="onHomeClick()">
+          HOME
+        </div>
+        <div class="col-md-1 bannertext2" (click)="onHowToPlayClick()" style="text-align: center;font-weight: 500;">
+            HOW&nbsp;TO&nbsp;PLAY
+          </div>
+          <div class="dropdown col-md-1 bannertext2" style="text-align: left;padding-left: 2%;font-weight: 500;">
+              FEATURES
+              <div class="dropdown-content">
+                  <a routerLink="/level">Level</a>
+                  <a routerLink="/gifts">Gifts</a>
+                  <a routerLink="/bonus">Bonus</a>
+                  <a routerLink="/ranking">Ranking</a>
+                </div>
+        </div>
+        <div class="dropdown col-md-1 bannertext2" style="text-align: left;font-weight: 500;">
+            COMPANY&nbsp;PROFILE&nbsp;
+            <div class="dropdown-content">
+                <a routerLink="/aboutus">About Us</a>
+                <a routerLink="/whycaptainx">Why Captain X</a>
+                <a routerLink="/userguide">Captain's&nbsp;Guide</a>
+                <a routerLink="/terms">T & C</a>
+                <a routerLink="/legality">Legality</a>
+                <a routerLink="/faq">FAQ</a>
+
+              </div>
+          </div>
+        <!-- <div class="col-md-1 bannertext2" (click)="onLoginClick()">
+          LOGIN
+        </div> -->
+    </div>
+  
+</header>

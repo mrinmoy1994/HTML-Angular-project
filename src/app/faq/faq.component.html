@@ -1,0 +1,531 @@
+<app-header></app-header>
+
+<div class="element">
+  <div class="block">
+      <div (click)= onClickToggele(0) class="Question">
+          <span class="QuestionFont">1. What is Captain X?</span>
+        </div>
+        <div *ngIf="block[0]" class="Answer">
+            Captain X is an online fantasy gaming company which provides a platform to play fantasy cricket in cricket across the country.
+        </div>
+  </div>
+</div>
+
+<div class="element">
+    <div class="block">
+        <div (click)= onClickToggele(1) class="Question">
+            <span class="QuestionFont">2. Why choose Captain X?</span>
+          </div>
+          <div *ngIf="block[1]" class="Answer">
+              There are so many reasons you can join captain x.
+              <ul>
+                <li>
+                    <strong>Secured:</strong> Captain X will provide a secure and trustworthy platform to play fantasy cricket.
+                </li>
+                <li>
+                    <strong>Gifts:</strong> We value our captains above all. To make sure of it Captain X will send gifts, brochures, kits, magazines etc. time to time to our captains’ residential address though courier. The delivery charges of the mentioned gifts shall not be deducted from any of the captains’ account. The sole purpose of this feature is promotional activity of the company and to provide a proper value to its captains. For more, please visit our gift page.
+                </li>
+                <li>
+                    <strong>Trustworthy:</strong> Under no circumstances Captain X will disclose any of its captains’ personal details to any other organisation/single entity unless the Captain provides a written consent to do so.
+                </li>
+                <li>
+                    <strong>Number of winning Captains:</strong> It’s better to gain something rather than nothing. We always value the money of our Captains. Keeping this thought in mind Captain X tries to increase the number of winners in every tournament.
+                </li>
+              </ul>
+              
+          </div>
+    </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div (click)= onClickToggele(2) class="Question">
+      <span class="QuestionFont">3. Is Fantasy game legal?</span>
+    </div>
+    <div *ngIf="block[2]" class="Answer">
+        Absolutely. It is legal as this is not a game of chance. This is a game of skills.
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div (click)= onClickToggele(3) class="Question">
+      <span class="QuestionFont">4. Who can participate in Captain X?</span>
+    </div>
+    <div *ngIf="block[3]" class="Answer">
+        Any Individual who is above 18 years old (on the day of creating profile on Captain X) and does not belong to Assam, Odisha, Telengana and Nagaland (as paid fantasy gaming is not permitted in these states) can participate in Captain X. 
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div (click)= onClickToggele(4) class="Question">
+      <span class="QuestionFont">5. How can I join?</span>
+    </div>
+    <div *ngIf="block[4]" class="Answer">
+        Its simple. Just go to Captain X home page. You can find various options to join Captain X. You can join by registering yourself in our log in page. You need to provide some information about yourself for registration. Also, you can join through your Facebook and Google account.
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div (click)= onClickToggele(5) class="Question">
+      <span class="QuestionFont">6. How can I create my profile?</span>
+    </div>
+    <div *ngIf="block[5]" class="Answer">
+        You can create profile in the Captain X by using your Facebook or Google account. You also can register by providing the necessary information.
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div (click)= onClickToggele(6) class="Question">
+      <span class="QuestionFont">7. What are the necessary documents to create a profile in Captain X?</span>
+    </div>
+    <div *ngIf="block[6]" class="Answer">
+        Below are the list of documents 
+        <ul>
+          <li><strong>PAN Card</strong></li>
+          <li><strong>Bank Account Details</strong></li>
+          <li><strong>Aadhar Card </strong></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(7) class="Question">
+        <span class="QuestionFont">8. How can I create my team?</span>
+      </div>
+      <div *ngIf="block[7]" class="Answer">
+          You will find the option to create a team for every match when it starts. Use the option to create a team for any particular tournament.  
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(8) class="Question">
+        <span class="QuestionFont">9. Maximum how many teams I can create?</span>
+      </div>
+      <div *ngIf="block[8]" class="Answer">
+          Maximum five (5) teams you can create for a match.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(9) class="Question">
+        <span class="QuestionFont">10. How can I join a tournament?</span>
+      </div>
+      <div *ngIf="block[9]" class="Answer">
+          You can join tournaments in tournament page. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(10) class="Question">
+        <span class="QuestionFont">11. Maximum how many tournaments I can join for a single match?</span>
+      </div>
+      <div *ngIf="block[10]" class="Answer">
+          Maximum Two Hundred (200) paid tournaments you can join for a single match. However, you can join unlimited practice tournaments.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(11) class="Question">
+        <span class="QuestionFont">12. Can I participate with multiple teams in a single tournament?</span>
+      </div>
+      <div *ngIf="block[11]" class="Answer">
+          You can participate with maximum Five (5) teams in Multi-Entry tournaments. However, for Single-Entry tournament you can join only with One (1) team.
+          <ul>
+            <li><strong>PAN Card</strong></li>
+            <li><strong>Bank Account Details</strong></li>
+            <li><strong>Aadhar Card </strong></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(12) class="Question">
+        <span class="QuestionFont">13. Can I create multiple profile?</span>
+      </div>
+      <div *ngIf="block[12]" class="Answer">
+          Creation of multiple profile using a single PAN Card is strictly prohibited in Captain X. Violation of this rule can be punishable by terminating the Captain’s Profile. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(13) class="Question">
+        <span class="QuestionFont">14. How can I change my password?</span>
+      </div>
+      <div *ngIf="block[13]" class="Answer">
+          Go to My Profile Page. Change Password option is there.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(14) class="Question">
+        <span class="QuestionFont">15. How can I modify/change the information in my profile?</span>
+      </div>
+      <div *ngIf="block[14]" class="Answer">
+          Except mobile number, for changing of all other captains’ profile related information you need to mail us to our support team. The concerned mail id is provided is Contact Us Page.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(15) class="Question">
+        <span class="QuestionFont">16. Where should I contact in case of any difficulty?</span>
+      </div>
+      <div *ngIf="block[15]" class="Answer">
+          You can write to us in support@captainxcc.com
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(16) class="Question">
+        <span class="QuestionFont">17. Can I change my bank details?</span>
+      </div>
+      <div *ngIf="block[16]" class="Answer">
+          You can change your bank account details. But the new account should be in your name. You can not provide others bank account detail in your profile.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(17) class="Question">
+        <span class="QuestionFont">18. How can I change my bank details?</span>
+      </div>
+      <div *ngIf="block[17]" class="Answer">
+          You need to send us a mail for changing your bank details.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(18) class="Question">
+        <span class="QuestionFont">19. Can I use more than one bank account details for withdrawal of my winnings?</span>
+      </div>
+      <div *ngIf="block[18]" class="Answer">
+          Under no circumstances you can use more than one bank account details in your profile. Violation of this should be punishable offence by blocking your profile form Captain X.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(19) class="Question">
+        <span class="QuestionFont">20. Can I provide another person’s bank details in my profile?</span>
+      </div>
+      <div *ngIf="block[19]" class="Answer">
+          Captain X does not permit to use another person’s bank account in a Captain’s profile. Every captain must use only their account for withdrawal.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(20) class="Question">
+        <span class="QuestionFont">21. What if I don’t have a bank account?</span>
+      </div>
+      <div *ngIf="block[20]" class="Answer">
+          If any Captain does not have a bank account, then the winning amount will be added to his wallet until he/she opens a bank account. Captain X shall not provide any other method of money transfer. Once the Captain will provide the bank details to Captain X then he/she can withdraw the winning amount. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(21) class="Question">
+        <span class="QuestionFont">22. How referral system works?</span>
+      </div>
+      <div *ngIf="block[21]" class="Answer">
+          You can refer your friends also to play Captain X. There is no limit for the number of friends you want to refer. For every referral you will get some bonus as per the company promotional activities. Once you want to refer any of your friend you will get a referral code which you need to send to friend. If your friend joins Captain X using your referral code he will also get several kinds of bonuses provided by Captain X.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(22) class="Question">
+        <span class="QuestionFont">23. Can I refer my friend?</span>
+      </div>
+      <div *ngIf="block[22]" class="Answer">
+          Of course, any Captain can refer his/her friends to join Captain X. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(23) class="Question">
+        <span class="QuestionFont">24. Maximum how many friends I can refer?</span>
+      </div>
+      <div *ngIf="block[23]" class="Answer">
+          There is no limit for referral. You can refer unlimited person and they can join and play using your referral code.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(24) class="Question">
+        <span class="QuestionFont">25. How much bonus I will get per friend?</span>
+      </div>
+      <div *ngIf="block[24]" class="Answer">
+          For every Captain who will join using your referral code, you will get 20% cash bonus of their 1st deposit amount. And 5% Cash bonus for their next Twenty (20) deposits.
+          <br/>
+      <strong>NB: THE DEPOSITED AMOUNT SHOLUD BE AT LEAST Rs. 100/- TO GET THE CASH BONUS BENEFIT FROM A REFERRAL.</strong>
+
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(25) class="Question">
+        <span class="QuestionFont">26. When will I get my bonus after joining of my referred friend?</span>
+      </div>
+      <div *ngIf="block[25]" class="Answer">
+          As soon as your referral friend will deposit minimum Rs. 100/- to their wallet you will get a 20% cash bonus immediately.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(26) class="Question">
+        <span class="QuestionFont">27. I have joined using my friend’s referral code. Would I get any bonus?</span>
+      </div>
+      <div *ngIf="block[26]" class="Answer">
+          If you have joined using your friend’s referral the bonus amount you can get is as below:
+          <ul>
+            <li><strong>For first five deposits you will get Twenty (20) % Cash Bonus.</strong></li>
+            <li><strong>For next five deposits you will get Ten (10) % cash bonus.</strong></li>
+            <li><strong>For next Fifty deposits you will get Five (5) % cash bonus.</strong></li>
+          </ul>
+          These above-mentioned cash bonuses are not being included to any other cash bonus provided by Captain X.
+      </div>
+    </div>
+  </div>
+ 
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(27) class="Question">
+        <span class="QuestionFont">28. What is joining bonus?</span>
+      </div>
+      <div *ngIf="block[27]" class="Answer">
+          Every Captain will get Five free entries in X9 tournament (per match one tournament).
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(28) class="Question">
+        <span class="QuestionFont">29. Why mobile number and e-mail verification is required?</span>
+      </div>
+      <div *ngIf="block[28]" class="Answer">
+          Mobile number and e-mail id is required for every communication between the Captain and Captain X. These are necessary to know about various features, promotional activities and many other things. Captain X will send SMS and E-mails to each Captain. So, this is absolutely necessary to verify the mobile and e-mail id.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(29) class="Question">
+        <span class="QuestionFont">30. How can I verify my mobile number and e-mail id?</span>
+      </div>
+      <div *ngIf="block[29]" class="Answer">
+          Its simple. Captain X will send a verification code in mobile number and e-mail id provided by the Captain. Use these codes to verify your mobile number and e-mail id.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(30) class="Question">
+        <span class="QuestionFont">31. Why PAN card verification is required?</span>
+      </div>
+      <div *ngIf="block[30]" class="Answer">
+          Captain X will be dealing with cash in case of deposit and withdraw. As per Govt. rule (IT Act) applicable tax amount will be deducted. For this PAN card is mandatory.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(31) class="Question">
+        <span class="QuestionFont">32. How can I verify my PAN card?</span>
+      </div>
+      <div *ngIf="block[31]" class="Answer">
+          Upload your PAN card image and update your PAN no. That’s it.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(32) class="Question">
+        <span class="QuestionFont">33. Why bank account details verification is required?</span>
+      </div>
+      <div *ngIf="block[32]" class="Answer">
+          To withdraw your winning amount bank account detail is compulsory. Under no circumstances Captain X will use another method of cash transaction. So, if you want your winnings, update your bank account.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(33) class="Question">
+        <span class="QuestionFont">34. How can I verify my bank account?</span>
+      </div>
+      <div *ngIf="block[33]" class="Answer">
+          First, update the necessary columns in your bank account detail page, i.e. Account Number, IFSC Code, Account holder’s Name. Then upload an image of the proof of your bank account details. Proof can be Cancel Cheque, 1st page of account passbook or online statement of your bank account. Hand-written documents will not be acceptable in this case.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(34) class="Question">
+        <span class="QuestionFont">35. How can I deposit money in my wallet?</span>
+      </div>
+      <div *ngIf="block[34]" class="Answer">
+          Use the option ‘Add Cash’ to add cash in your wallet. You can add cash through Debit Card, Credit Card, Net Banking, Paytm.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(35) class="Question">
+        <span class="QuestionFont">36. Is there any minimum and maximum limit for deposit?</span>
+      </div>
+      <div *ngIf="block[35]" class="Answer">
+          There is no minimum and maximum amount for deposit. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(36) class="Question">
+        <span class="QuestionFont">37. The amount is not updated in my wallet after I have deposited money. What would I do?</span>
+      </div>
+      <div *ngIf="block[36]" class="Answer">
+          Please check the credentials you have entered during adding amount. If all the credentials are correct then you write to us along with the deposit proof, i.e. the statement of account or transaction id. We will process your request within 24 hours.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(37) class="Question">
+        <span class="QuestionFont">38. What are the different methods I can use to deposit money in my wallet?</span>
+      </div>
+      <div *ngIf="block[37]" class="Answer">
+          Debit card, Credit Card, Net banking, UPI.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(38) class="Question">
+        <span class="QuestionFont">39. Is deposit compulsory?</span>
+      </div>
+      <div *ngIf="block[38]" class="Answer">
+          To participate in paid tournaments you need to have sufficient amount in your wallet. It is necessary to deposit if you want to participate in paid tournaments. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(39) class="Question">
+        <span class="QuestionFont">40. How can I withdraw money from my wallet?</span>
+      </div>
+      <div *ngIf="block[39]" class="Answer">
+          You will find option for Withdraw in my wallet page. The only task you need to do is to select the option and put the amount you want to withdraw.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(40) class="Question">
+        <span class="QuestionFont">41. Can I withdraw my deposited amount?</span>
+      </div>
+      <div *ngIf="block[40]" class="Answer">
+          No. Deposited amount only can be used to play paid tournaments.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(41) class="Question">
+        <span class="QuestionFont">42. Can I withdraw the bonus cash provided by Captain X?</span>
+      </div>
+      <div *ngIf="block[41]" class="Answer">
+          No. Bonus cash can only be used to play paid tournaments.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(42) class="Question">
+        <span class="QuestionFont">43. Is there any minimum and maximum limit of withdrawal?</span>
+      </div>
+      <div *ngIf="block[42]" class="Answer">
+          You can withdraw minimum Rs. 300/- and Maximum Rs. 2,00,000/- per day. 
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+    <div class="block">
+      <div (click)= onClickToggele(43) class="Question">
+        <span class="QuestionFont">44. After how many days the withdrawal amount will get credited into my bank account?</span>
+      </div>
+      <div *ngIf="block[43]" class="Answer">
+          Once you withdraw from your wallet it generally takes 3-5 working days for the amount to be credited in your account. In any case if the amount will not be credited we suggest you please check the banking details you have updated in Captain X. If the credentials are correct and you still do not get the amount in your account kindly write to us with documentary evidence. We will take the necessary actions at the earliest and try to resolve your issues.
+      </div>
+    </div>
+  </div>
+
+<div class="element" style="padding-bottom: 2%;">
+    <div class="block">
+      <div (click)= onClickToggele(44) class="Question">
+        <span class="QuestionFont">45. What is the eligibility criteria for withdrawal?</span>
+      </div>
+      <div *ngIf="block[44]" class="Answer">
+          You must have a bank account in your name. You must not be below 18 years old. You have updated and verified your PAN and Bank details in your Captain X account. You fulfilled other applicable criteria for withdraw, if any.
+      </div>
+    </div>
+  </div>
+

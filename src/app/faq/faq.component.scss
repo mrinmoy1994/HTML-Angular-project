@@ -1,0 +1,49 @@
+.block{
+    border-radius: 9%;
+    cursor: pointer;
+}
+
+.element{
+    padding-left: 2%;
+    padding-right: 2%; 
+    padding-top: 2%;
+}
+
+.QuestionFont{
+    font-size: large;font-weight: bold; font-family: initial;
+}
+
+.Question{
+    padding-left: 2%;
+    background: #cfe0e4;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.Question:hover
+{
+    padding-left: 2%;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    background: hsl(36, 94%, 50%); 
+}
+
+.Question:active
+{
+    padding-left: 2%;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    background: hsl(199, 87%, 57%); 
+}
+
+.Answer{
+    border-radius: 7px;
+    width: vmax;
+    padding: 2%;
+  }

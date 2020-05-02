@@ -1,0 +1,42 @@
+div h3{
+font-size: 16px;
+font-weight: 700;
+color: #4a4a4a;
+margin-bottom: 0;
+}
+
+.pic2{
+    margin-top: 10%;
+    height: 216px;
+    margin-left: 21%;
+}
+
+.pic1{
+    margin-top: 10%;
+    height: 216px;
+    margin-left: 12%;
+}
+
+.pic3{
+    height: 216px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .pic2{
+        margin-top: 10%;
+        height: 216px;
+        margin-left: 1%;
+    }
+    
+    .pic1{
+        margin-top: 10%;
+        height: 216px;
+        margin-left: 1%;
+    }
+
+    h1{
+        font-size: 25px;
+    font-weight: bolder;
+    }
+}
