@@ -49,8 +49,9 @@ a:hover {
     //background-image: url("src/assets/image/webbanner.png");
     //background-image:linear-gradient( rgb(14, 70, 143),rgb(0, 195, 255));
     width: 100vw;
-    height: 76vh;
+    height: 99vh;
     overflow: hidden;
+    padding: 0;
 }
 
 .bannerimg
@@ -60,6 +61,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("src/assets/image/background.png");
+}
+.offerBack{
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 62vh;
+  background-image:  url("src/assets/image/offerbackground.jpg");
 }
 
 .bannerimg2
@@ -78,7 +85,7 @@ a:hover {
 .bannertext1{
   color: white;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 3%;
   img{
     width: 100%;
   }
@@ -87,7 +94,7 @@ a:hover {
 .androidImg{
   color: white;
   text-align: center;
-  padding-top: 26%;
+  padding-top: 30%;
   img{
     width: 100%;
   }
@@ -97,8 +104,9 @@ a:hover {
 .mobileImg{
   color: white;
   text-align: center;
+  padding-top: 9%;
   img{
-    width: 75%;
+    width: 70%;
   }
 
 }
@@ -212,9 +220,9 @@ img{
   }
 
 .bannertext2{
-    margin-top: 3%;
+    margin-top: 1%;
     height: 40px;
-   // font-size: 15px;
+    //font-size: 15px;
     // font-weight: bolder;
     // color: rgb(4, 10, 88);
     vertical-align: middle;
