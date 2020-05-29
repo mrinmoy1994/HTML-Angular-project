@@ -25,6 +25,7 @@ import { WhycaptainxComponent } from './whycaptainx/whycaptainx.component';
 import { UserguideComponent } from './userguide/userguide.component';
 import { MaintainanceComponent } from './maintainance/maintainance.component';
 import { ModalComponent } from './modal/modal.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -55,8 +56,8 @@ import { ModalComponent } from './modal/modal.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-
+    ReactiveFormsModule,
+    NgImageSliderModule
   ],
   providers: [],
   entryComponents: [ModalComponent],
