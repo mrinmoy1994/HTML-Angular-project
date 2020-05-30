@@ -36,7 +36,21 @@ export class BonusComponent implements OnInit {
       title: 'Example two with title.'
     },
   ];
+  toggle = false;
   constructor() {}
 
   ngOnInit() {}
+
+  openNav() {
+    this.toggle = ! this.toggle;
+    if ( this.toggle ) {
+      document.getElementById('mySidebar').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+
+    } else {
+      document.getElementById('mySidebar').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  }
+
 }
