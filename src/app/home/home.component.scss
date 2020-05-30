@@ -65,7 +65,8 @@ a:hover {
 .offerBack{
   background-position: center;
   background-repeat: no-repeat;
-  height: 62vh;
+  background-size: cover;
+ // height: 62vh;
   background-image:  url("src/assets/image/offerbackground.jpg");
 }
 
