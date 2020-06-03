@@ -7,6 +7,37 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  imageObject = [
+    {
+      image: 'assets/image/comment1.JPG',
+      thumbImage: 'assets/image/comment1.JPG',
+      //title: 'comment1',
+    },
+    {
+      image: 'assets/image/comment2.jpg',
+      thumbImage: 'assets/image/comment2.jpg',
+    },
+    {
+      image: 'assets/image/comment3.jpg',
+      thumbImage: 'assets/image/comment3.jpg',
+     // title: 'Example with title.',
+    },
+    {
+      image: 'assets/image/comment4.jpg',
+      thumbImage: 'assets/image/comment4.jpg',
+      //title: 'Hummingbirds are amazing creatures',
+    },
+    {
+      image: 'assets/image/comment5.jpg',
+      thumbImage: 'assets/image/comment5.jpg',
+    },
+    // {
+    //   image: 'assets/image/how to play 5 join tournament.png',
+    //   thumbImage: 'assets/image/how to play 5 join tournament.png',
+    //   //title: 'Example two with title.'
+    // },
+  ];
   showSpinner: boolean;
   @ViewChild('rewards') public rewards: ElementRef;
   @ViewChild('aboutus') public aboutus: ElementRef;
@@ -64,14 +95,14 @@ export class HomeComponent implements OnInit {
     if (true) {
       this.ngZone.run(() => {
         console.debug("Scroll Event");
-        const mybutton = document.getElementById("myBtn");
+        //const mybutton = document.getElementById("myBtn");
         const myHeader = document.getElementById('myHeader');
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
+         // mybutton.style.display = "none";
           myHeader.classList.add('sticky');   
           this.changeLogo = true;
         } else {
-          mybutton.style.display = "none";
+         // mybutton.style.display = "none";
           myHeader.classList.remove('sticky');
           this.changeLogo = false;
         }

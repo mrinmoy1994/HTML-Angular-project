@@ -26,6 +26,7 @@ import { UserguideComponent } from './userguide/userguide.component';
 import { MaintainanceComponent } from './maintainance/maintainance.component';
 import { ModalComponent } from './modal/modal.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgImageSliderModule
+    NgImageSliderModule, 
+    SidebarModule.forRoot()
   ],
   providers: [],
   entryComponents: [ModalComponent],

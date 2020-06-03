@@ -69,7 +69,7 @@ COMPANY&nbsp;PROFILE&nbsp;
     </div>
   </div>
 </div>
-  <button class="arrow_box" (click)="topFunction()" id="myBtn" title="Go to top"></button>
+  <!-- <button class="arrow_box" (click)="topFunction()" id="myBtn" title="Go to top"></button>  -->
   
 <div class="col-md-12" style="padding:0; text-align: center;" #howtoplay>
   <div style="padding: 0;">
@@ -132,7 +132,7 @@ COMPANY&nbsp;PROFILE&nbsp;
 
   <div class="col-md-12 offerBack" style="padding:0;text-align: center; color: white ">
     <div class="col-md-12" style="padding:0;">
-     <h1 style="font-weight: 900; color: #0a3164;">Enjoy Great Offers</h1> 
+     <h1 style="font-weight: 900; color: #0a3164;">Attractive Bonus</h1> 
     </div>
     <div class="col-md-12" style="padding:0;">
       <div class="col-md-4" style="padding:0;padding-top: 7rem;display: flex; align-items: baseline; justify-content: left;">
@@ -172,7 +172,7 @@ COMPANY&nbsp;PROFILE&nbsp;
           </div>
         </div>
         <div class="col-md-12 " style="padding:0;">
-          <div class="col-md-8" style="padding:0;text-align: right;top: 3rem;"><img src="assets/image/Social media icon 2.png"  style="width:60%;"></div>
+          <div class="col-md-8" style="text-align: right;"><img src="assets/image/Social media icon 2.png"  style="width:60%;"></div>
           <div class="col-md-4" style="padding:2rem;display: flex; align-items: center; justify-content: center;">
             <span>*Terms & Conditions apply</span>
           </div>
@@ -207,10 +207,10 @@ COMPANY&nbsp;PROFILE&nbsp;
     <div class="col-md-3"></div>
   </div>
   <div class="col-md-12 levelBlock" style="text-align: center">
-  <div >
+  <!-- <div >
           <div class="col-md-4" style="font-size: large;text-align: center;margin-top: 10px; margin-bottom:20px">
   <div class="card">
-    <!-- <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%"> -->
+    <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%"> 
     <div style="font-size: large;font-family: cursive;">"This level takes you to another level of Captain X fantasy gaming, where you rewarded with a Welcome Kit from CXC"</div>
     <div style="font-size: small;font-family: cursive; text-align: right;">- Mrinmoy Biswas</div>
     <div style="font-size: 10px;font-family: cursive;text-align: right;">Full Stack Developer,CAPTAIN X</div>
@@ -218,7 +218,7 @@ COMPANY&nbsp;PROFILE&nbsp;
 </div>
           <div class="col-md-4" style="font-size: large;text-align: center;margin-top: 10px; margin-bottom:20px">
 <div class="card">
-  <!-- <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%"> -->
+  <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%"> 
   <div style="font-size: large;font-family: cursive;">"This level takes you to another level of Captain X fantasy gaming, where you rewarded with a Welcome Kit from CXC"</div>
   <div style="font-size: small;font-family: cursive; text-align: right;">- Mrinmoy Biswas</div>
   <div style="font-size: 10px;font-family: cursive;text-align: right;">Full Stack Developer,CAPTAIN X</div>
@@ -226,12 +226,22 @@ COMPANY&nbsp;PROFILE&nbsp;
           </div>
           <div class="col-md-4" style="font-size: large;text-align: center;margin-top: 10px; margin-bottom:20px">
   <div class="card">
-    <!-- <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%"> -->
+    <img class="card-img-top img-fluid" src="assets/image/Capture.PNG" alt="Card image cap" style="margin-top: 10px; margin-bottom:20px; border-radius: 50%">
     <div style="font-size: large;font-family: cursive;">"This level takes you to another level of Captain X fantasy gaming, where you rewarded with a Welcome Kit from CXC"</div>
     <div style="font-size: small;font-family: cursive; text-align: right;">- Mrinmoy Biswas</div>
     <div style="font-size: 10px;font-family: cursive;text-align: right;">Full Stack Developer,CAPTAIN X</div>
  </div>
 </div>
+        </div> -->
+
+        <div style="height: 100%; text-align:center;margin:0; padding:0;">
+          <ng-image-slider #nav
+          [images]="imageObject"
+          [infinite]="true"
+          [autoSlide]="1"
+          [animationSpeed]="1"
+          [imageSize]="{width: '33.33%', height: 200}"
+          [slideImage]="1"></ng-image-slider>
         </div>
   </div>
   <!-- <div class="col-md-12 levelBlock" style="text-align: center;">
