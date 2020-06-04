@@ -93,6 +93,7 @@ a:hover {
 }
 
 .androidImg{
+  display: block;
   color: white;
   text-align: center;
   padding-top: 30%;
@@ -109,7 +110,9 @@ a:hover {
   img{
     width: 70%;
   }
-
+} 
+.mobile_with_hand {
+  display: block;;
 }
 .bannertext3{
     color: white;
@@ -490,4 +493,121 @@ img{
     width: 100%;
     background-color: #1a67cc;
     z-index: 10000;
+  }
+
+  .enter_mobile {
+    padding:0;
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
+    background-image: url("/assets/image/GetAppbutton2.png"); 
+    height: 8vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media only screen and (device-width: 320px) {
+    .mobileImg {
+      padding: 0;
+      padding-top: 9%;
+    }
+    .mobile_with_hand {
+      display: none;
+    }
+    .bannertext1 {
+      img {
+        height: 20rem;
+        width: 26rem;
+      }
+    }
+    .enter_mobile {
+      width: 31rem;
+    }
+    .androidImg {
+      display: none;
+    }
+  }
+  @media only screen and (device-width: 360px) {
+    .mobile_with_hand {
+      display: none;
+    }
+    .bannertext1 {
+      img {
+        height: 20rem;
+        width: 30rem;
+      }
+    }
+    .enter_mobile {
+      width: 33rem;
+    }
+    .androidImg {
+      display: none;
+    }
+  }
+  @media only screen and (device-width: 375px) {
+    .mobileImg {
+      padding: 0;
+      padding-top: 9%;
+    }
+    .mobile_with_hand {
+      display: none;
+    }
+    .bannertext1 {
+      img {
+        height: 20rem;
+        width: 30rem;
+      }
+    }
+    .enter_mobile {
+      width: 37rem;
+    }
+    .androidImg {
+      display: none;
+    }
+  }
+  @media only screen and (device-width: 411px) and (device-width: 414px) {
+    .mobileImg {
+      padding: 0;
+      padding-top: 9%;
+    }
+    .mobile_with_hand {
+      display: none;
+    }
+    .bannertext1 {
+      img {
+        height: 20rem;
+        width: 34rem;
+      }
+    }
+    .enter_mobile {
+      width: 40rem;
+    }
+    .androidImg {
+      display: none;
+    }
+  }
+
+  @media only screen and (device-width : 768px) {
+    // .mobileImg {
+    //   padding: 0;
+    //   padding-top: 9%;
+    // }
+    .mobile_with_hand {
+      display: none;
+    }
+    // .bannertext1 {
+    //   img {
+    //     height: 40rem;
+    //     width: 60rem;
+    //   }
+    // }
+    .enter_mobile {
+      width: 40rem;
+    }
+    .androidImg {
+      display: none;
+    }
+  }
+
+  @media only screen and (device-width : 1024px) {
   }
