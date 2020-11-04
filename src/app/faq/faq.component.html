@@ -2,7 +2,7 @@
 
 <div class="element">
   <div class="block">
-      <div (click)= onClickToggele(0) class="Question">
+      <div id='0' (click)= onClickToggele(0) class="Question">
           <span class="QuestionFont">1. What is Captain X?</span>
         </div>
         <div *ngIf="block[0]" class="Answer">
@@ -13,14 +13,14 @@
 
 <div class="element">
     <div class="block">
-        <div (click)= onClickToggele(1) class="Question">
+        <div id='1' (click)= onClickToggele(1) class="Question">
             <span class="QuestionFont">2. Why choose Captain X?</span>
           </div>
           <div *ngIf="block[1]" class="Answer">
               There are so many reasons you can join captain x.
               <ul>
                 <li>
-                    <strong>Secured:</strong> Captain X will provide a secure and trustworthy platform to play fantasy cricket.
+                    <strong>Secured:</strong> Captain X will provide a secure and trustworthy platform to play fantasy game.
                 </li>
                 <li>
                     <strong>Gifts:</strong> We value our captains above all. To make sure of it Captain X will send gifts, brochures, kits, magazines etc. time to time to our captains’ residential address though courier. The delivery charges of the mentioned gifts shall not be deducted from any of the captains’ account. The sole purpose of this feature is promotional activity of the company and to provide a proper value to its captains. For more, please visit our gift page.
@@ -39,7 +39,7 @@
 
 <div class="element">
   <div class="block">
-    <div (click)= onClickToggele(2) class="Question">
+    <div id='2' (click)= onClickToggele(2) class="Question">
       <span class="QuestionFont">3. Is Fantasy game legal?</span>
     </div>
     <div *ngIf="block[2]" class="Answer">
@@ -50,7 +50,7 @@
 
 <div class="element">
   <div class="block">
-    <div (click)= onClickToggele(3) class="Question">
+    <div id='3' (click)= onClickToggele(3) class="Question">
       <span class="QuestionFont">4. Who can participate in Captain X?</span>
     </div>
     <div *ngIf="block[3]" class="Answer">
@@ -61,7 +61,7 @@
 
 <div class="element">
   <div class="block">
-    <div (click)= onClickToggele(4) class="Question">
+    <div id='4' (click)= onClickToggele(4) class="Question">
       <span class="QuestionFont">5. How can I join?</span>
     </div>
     <div *ngIf="block[4]" class="Answer">
@@ -72,7 +72,7 @@
 
 <div class="element">
   <div class="block">
-    <div (click)= onClickToggele(5) class="Question">
+    <div id='5' (click)= onClickToggele(5) class="Question">
       <span class="QuestionFont">6. How can I create my profile?</span>
     </div>
     <div *ngIf="block[5]" class="Answer">
@@ -83,7 +83,7 @@
 
 <div class="element">
   <div class="block">
-    <div (click)= onClickToggele(6) class="Question">
+    <div id='6' (click)= onClickToggele(6) class="Question">
       <span class="QuestionFont">7. What are the necessary documents to create a profile in Captain X?</span>
     </div>
     <div *ngIf="block[6]" class="Answer">
@@ -99,7 +99,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(7) class="Question">
+      <div id='7' (click)= onClickToggele(7) class="Question">
         <span class="QuestionFont">8. How can I create my team?</span>
       </div>
       <div *ngIf="block[7]" class="Answer">
@@ -110,7 +110,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(8) class="Question">
+      <div id='8' (click)= onClickToggele(8) class="Question">
         <span class="QuestionFont">9. Maximum how many teams I can create?</span>
       </div>
       <div *ngIf="block[8]" class="Answer">
@@ -121,7 +121,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(9) class="Question">
+      <div id='9' (click)= onClickToggele(9) class="Question">
         <span class="QuestionFont">10. How can I join a tournament?</span>
       </div>
       <div *ngIf="block[9]" class="Answer">
@@ -132,7 +132,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(10) class="Question">
+      <div id='10' (click)= onClickToggele(10) class="Question">
         <span class="QuestionFont">11. Maximum how many tournaments I can join for a single match?</span>
       </div>
       <div *ngIf="block[10]" class="Answer">
@@ -143,23 +143,23 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(11) class="Question">
+      <div id='11' (click)= onClickToggele(11) class="Question">
         <span class="QuestionFont">12. Can I participate with multiple teams in a single tournament?</span>
       </div>
       <div *ngIf="block[11]" class="Answer">
           You can participate with maximum Five (5) teams in Multi-Entry tournaments. However, for Single-Entry tournament you can join only with One (1) team.
-          <ul>
+          <!-- <ul>
             <li><strong>PAN Card</strong></li>
             <li><strong>Bank Account Details</strong></li>
             <li><strong>Aadhar Card </strong></li>
-          </ul>
+          </ul> -->
       </div>
     </div>
   </div>
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(12) class="Question">
+      <div id='12' (click)= onClickToggele(12) class="Question">
         <span class="QuestionFont">13. Can I create multiple profile?</span>
       </div>
       <div *ngIf="block[12]" class="Answer">
@@ -170,7 +170,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(13) class="Question">
+      <div id='13' (click)= onClickToggele(13) class="Question">
         <span class="QuestionFont">14. How can I change my password?</span>
       </div>
       <div *ngIf="block[13]" class="Answer">
@@ -181,7 +181,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(14) class="Question">
+      <div id='14' (click)= onClickToggele(14) class="Question">
         <span class="QuestionFont">15. How can I modify/change the information in my profile?</span>
       </div>
       <div *ngIf="block[14]" class="Answer">
@@ -192,7 +192,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(15) class="Question">
+      <div id='15' (click)= onClickToggele(15) class="Question">
         <span class="QuestionFont">16. Where should I contact in case of any difficulty?</span>
       </div>
       <div *ngIf="block[15]" class="Answer">
@@ -203,7 +203,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(16) class="Question">
+      <div id='16' (click)= onClickToggele(16) class="Question">
         <span class="QuestionFont">17. Can I change my bank details?</span>
       </div>
       <div *ngIf="block[16]" class="Answer">
@@ -214,7 +214,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(17) class="Question">
+      <div id='17' (click)= onClickToggele(17) class="Question">
         <span class="QuestionFont">18. How can I change my bank details?</span>
       </div>
       <div *ngIf="block[17]" class="Answer">
@@ -225,7 +225,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(18) class="Question">
+      <div id='18' (click)= onClickToggele(18) class="Question">
         <span class="QuestionFont">19. Can I use more than one bank account details for withdrawal of my winnings?</span>
       </div>
       <div *ngIf="block[18]" class="Answer">
@@ -236,7 +236,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(19) class="Question">
+      <div id='19' (click)= onClickToggele(19) class="Question">
         <span class="QuestionFont">20. Can I provide another person’s bank details in my profile?</span>
       </div>
       <div *ngIf="block[19]" class="Answer">
@@ -247,7 +247,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(20) class="Question">
+      <div id='20' (click)= onClickToggele(20) class="Question">
         <span class="QuestionFont">21. What if I don’t have a bank account?</span>
       </div>
       <div *ngIf="block[20]" class="Answer">
@@ -258,7 +258,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(21) class="Question">
+      <div id='21' (click)= onClickToggele(21) class="Question">
         <span class="QuestionFont">22. How referral system works?</span>
       </div>
       <div *ngIf="block[21]" class="Answer">
@@ -269,7 +269,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(22) class="Question">
+      <div id='22' (click)= onClickToggele(22) class="Question">
         <span class="QuestionFont">23. Can I refer my friend?</span>
       </div>
       <div *ngIf="block[22]" class="Answer">
@@ -280,7 +280,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(23) class="Question">
+      <div id='23' (click)= onClickToggele(23) class="Question">
         <span class="QuestionFont">24. Maximum how many friends I can refer?</span>
       </div>
       <div *ngIf="block[23]" class="Answer">
@@ -291,7 +291,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(24) class="Question">
+      <div id='24' (click)= onClickToggele(24) class="Question">
         <span class="QuestionFont">25. How much bonus I will get per friend?</span>
       </div>
       <div *ngIf="block[24]" class="Answer">
@@ -305,7 +305,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(25) class="Question">
+      <div id='25' (click)= onClickToggele(25) class="Question">
         <span class="QuestionFont">26. When will I get my bonus after joining of my referred friend?</span>
       </div>
       <div *ngIf="block[25]" class="Answer">
@@ -316,7 +316,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(26) class="Question">
+      <div id='26' (click)= onClickToggele(26) class="Question">
         <span class="QuestionFont">27. I have joined using my friend’s referral code. Would I get any bonus?</span>
       </div>
       <div *ngIf="block[26]" class="Answer">
@@ -333,7 +333,7 @@
  
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(27) class="Question">
+      <div id='27' (click)= onClickToggele(27) class="Question">
         <span class="QuestionFont">28. What is joining bonus?</span>
       </div>
       <div *ngIf="block[27]" class="Answer">
@@ -344,7 +344,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(28) class="Question">
+      <div id='28' (click)= onClickToggele(28) class="Question">
         <span class="QuestionFont">29. Why mobile number and e-mail verification is required?</span>
       </div>
       <div *ngIf="block[28]" class="Answer">
@@ -355,7 +355,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(29) class="Question">
+      <div id='29' (click)= onClickToggele(29) class="Question">
         <span class="QuestionFont">30. How can I verify my mobile number and e-mail id?</span>
       </div>
       <div *ngIf="block[29]" class="Answer">
@@ -366,7 +366,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(30) class="Question">
+      <div id='30' (click)= onClickToggele(30) class="Question">
         <span class="QuestionFont">31. Why PAN card verification is required?</span>
       </div>
       <div *ngIf="block[30]" class="Answer">
@@ -377,7 +377,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(31) class="Question">
+      <div id='31' (click)= onClickToggele(31) class="Question">
         <span class="QuestionFont">32. How can I verify my PAN card?</span>
       </div>
       <div *ngIf="block[31]" class="Answer">
@@ -388,7 +388,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(32) class="Question">
+      <div id='32' (click)= onClickToggele(32) class="Question">
         <span class="QuestionFont">33. Why bank account details verification is required?</span>
       </div>
       <div *ngIf="block[32]" class="Answer">
@@ -399,7 +399,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(33) class="Question">
+      <div id='33' (click)= onClickToggele(33) class="Question">
         <span class="QuestionFont">34. How can I verify my bank account?</span>
       </div>
       <div *ngIf="block[33]" class="Answer">
@@ -410,7 +410,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(34) class="Question">
+      <div id='34' (click)= onClickToggele(34) class="Question">
         <span class="QuestionFont">35. How can I deposit money in my wallet?</span>
       </div>
       <div *ngIf="block[34]" class="Answer">
@@ -421,7 +421,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(35) class="Question">
+      <div id='35' (click)= onClickToggele(35) class="Question">
         <span class="QuestionFont">36. Is there any minimum and maximum limit for deposit?</span>
       </div>
       <div *ngIf="block[35]" class="Answer">
@@ -432,7 +432,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(36) class="Question">
+      <div id='36' (click)= onClickToggele(36) class="Question">
         <span class="QuestionFont">37. The amount is not updated in my wallet after I have deposited money. What would I do?</span>
       </div>
       <div *ngIf="block[36]" class="Answer">
@@ -443,18 +443,18 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(37) class="Question">
+      <div id='37' (click)= onClickToggele(37) class="Question">
         <span class="QuestionFont">38. What are the different methods I can use to deposit money in my wallet?</span>
       </div>
       <div *ngIf="block[37]" class="Answer">
-          Debit card, Credit Card, Net banking, UPI.
+          Debit card, Credit Card, Net banking.
       </div>
     </div>
   </div>
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(38) class="Question">
+      <div id='38' (click)= onClickToggele(38) class="Question">
         <span class="QuestionFont">39. Is deposit compulsory?</span>
       </div>
       <div *ngIf="block[38]" class="Answer">
@@ -465,7 +465,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(39) class="Question">
+      <div id='39' (click)= onClickToggele(39) class="Question">
         <span class="QuestionFont">40. How can I withdraw money from my wallet?</span>
       </div>
       <div *ngIf="block[39]" class="Answer">
@@ -476,7 +476,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(40) class="Question">
+      <div id='40' (click)= onClickToggele(40) class="Question">
         <span class="QuestionFont">41. Can I withdraw my deposited amount?</span>
       </div>
       <div *ngIf="block[40]" class="Answer">
@@ -487,7 +487,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(41) class="Question">
+      <div id='41' (click)= onClickToggele(41) class="Question">
         <span class="QuestionFont">42. Can I withdraw the bonus cash provided by Captain X?</span>
       </div>
       <div *ngIf="block[41]" class="Answer">
@@ -498,7 +498,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(42) class="Question">
+      <div id='42' (click)= onClickToggele(42) class="Question">
         <span class="QuestionFont">43. Is there any minimum and maximum limit of withdrawal?</span>
       </div>
       <div *ngIf="block[42]" class="Answer">
@@ -509,7 +509,7 @@
 
 <div class="element">
     <div class="block">
-      <div (click)= onClickToggele(43) class="Question">
+      <div id='43' (click)= onClickToggele(43) class="Question">
         <span class="QuestionFont">44. After how many days the withdrawal amount will get credited into my bank account?</span>
       </div>
       <div *ngIf="block[43]" class="Answer">
@@ -518,9 +518,9 @@
     </div>
   </div>
 
-<div class="element" style="padding-bottom: 2%;">
+<div class="element">
     <div class="block">
-      <div (click)= onClickToggele(44) class="Question">
+      <div id='44' (click)= onClickToggele(44) class="Question">
         <span class="QuestionFont">45. What is the eligibility criteria for withdrawal?</span>
       </div>
       <div *ngIf="block[44]" class="Answer">
@@ -528,4 +528,144 @@
       </div>
     </div>
   </div>
+
+  <div class="element">
+    <div class="block">
+      <div id='45' (click)= onClickToggele(45) class="Question">
+        <span class="QuestionFont">46. I don’t know anything about cricket. Can I still play?</span>
+      </div>
+      <div *ngIf="block[45]" class="Answer">
+        Yes, you can play by following our ‘How to Play’ page.
+      </div>
+    </div>
+  </div>
+
+  <div class="element">
+    <div class="block">
+      <div id='46' (click)= onClickToggele(46) class="Question">
+        <span class="QuestionFont">47. One of my players gets an injury, what can I do in this situation?</span>
+      </div>
+      <div *ngIf="block[46]" class="Answer">
+        <ol style="list-style-type: upper-alpha;">
+          <ul>If the player gets the injury between two matches, you can change the player by editing your team.</ul>
+          <ul>If the player gets injured during the match and unable to play further in that match then the Fantasy Points obtained by the player before his injury, will be added.</ul>
+        </ol>
+</div>
+</div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div id='47' (click)= onClickToggele(47) class="Question">
+      <span class="QuestionFont">48. Can I make changes my team after the match starts?</span>
+    </div>
+    <div *ngIf="block[47]" class="Answer">
+      No.
+    </div>
+    </div>
+    </div>
+
+<div class="element">
+  <div class="block">
+    <div id='48' (click)= onClickToggele(48) class="Question">
+      <span class="QuestionFont">49. What is the minimum entry fee?</span>
+    </div>
+    <div *ngIf="block[48]" class="Answer">
+      Rs. 9/- is the minimum entry fee. We also have one practice contest which does not have any entry fee and winning prize.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+  <div class="block">
+    <div id='49' (click)= onClickToggele(49) class="Question">
+      <span class="QuestionFont">50. If the match gets abandoned, what will happen?</span>
+    </div>
+    <div *ngIf="block[49]" class="Answer">
+      In that case the entry fee which you used to join tournament(s) will be refunded to your wallet.
+      </div>
+  </div>
+  </div>
+
+<div class="element">
+  <div class="block">
+    <div id='50' (click)= onClickToggele(50) class="Question">
+      <span class="QuestionFont">51. Am I able to delete the team which I have already created? </span>
+    </div>
+    <div *ngIf="block[50]" class="Answer">
+      No
+    </div>
+  </div>
+</div>  
+
+<div class="element">
+  <div class="block">
+    <div id='51' (click)= onClickToggele(51) class="Question">
+      <span class="QuestionFont">52. How can I know which tournament has single winner and which one has multiple winner?</span>
+    </div>
+    <div *ngIf="block[51]" class="Answer">
+      Multi-winning tournaments are symbolized by M in the tournament page. And in case of single winner tournament there is no specific symbol
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div id='52' (click)= onClickToggele(52) class="Question">
+      <span class="QuestionFont">53. If the tournament will not fill up with the required number of participants, what will happen?</span>
+    </div>
+    <div *ngIf="block[52]" class="Answer">
+      The tournament will be continued in case of confirmed winning tournament, and the tournament gets cancelled in case of single winning tournament.
+      </div>
+    </div>
+  </div>
+
+<div class="element">
+  <div class="block">
+    <div id='53' (click)= onClickToggele(53) class="Question">
+      <span class="QuestionFont">54. What is the exact starting time of the game tournaments?</span>
+    </div>
+    <div *ngIf="block[53]" class="Answer">
+      The exact starting time of the game tournament will be official starting time of the match. In case of any delay company will decide whether to delay the starting time or not.
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div id='54' (click)= onClickToggele(54) class="Question">
+      <span class="QuestionFont">55. How the players’ credit will be determined?</span>
+    </div>
+    <div *ngIf="block[54]" class="Answer">
+      <p>
+        Players’ credit will be determined on basis of players’ recent form, the value of the player in real team, importance of the series. Players’ credit will be same throughout the series. During any series, players’ credit will not be changed. Captain X has a dedicated research team who are constantly monitoring the players, the matches, the credits to decide the players’ credit.
+      </p>
+      Captain X has soul and absolute authority to determine the credit of any player. Under no circumstances, any captain can have any opinion about the determination of the players’ credit.
+    </div>
+  </div>
+</div>
+
+<div class="element">
+  <div class="block">
+    <div id='55' (click)= onClickToggele(55) class="Question">
+      <span class="QuestionFont">56. I have selected a team. But one of my selected player is not playing in that match. What can I do?</span>
+    </div>
+    <div *ngIf="block[55]" class="Answer">
+      You can change the player immediately if the match has not been started. If you are unable to change the player before the match’s starting time, then the fantasy points of that player will be zero.
+    </div>
+  </div>
+</div>
+
+<div class="element" style="padding-bottom: 2%;">
+  <div class="block">
+    <div id='56' (click)= onClickToggele(56) class="Question">
+      <span class="QuestionFont">57. Who is a captain in Captain X?</span>
+    </div>
+    <div *ngIf="block[56]" class="Answer">
+      Every individual (User) who has registered in Captain X is a Captain. 
+    </div>
+  </div>
+</div>
+  
+
 

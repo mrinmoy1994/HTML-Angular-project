@@ -46,17 +46,17 @@ a:hover {
 }
 
 .banner{
-    //background-image: url("src/assets/image/webbanner.png");
-    //background-image:linear-gradient( rgb(14, 70, 143),rgb(0, 195, 255));
-    width: 100vw;
-    height: 99vh;
-    overflow: hidden;
-    padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  max-width: 100vw;
+  //max-height: 76vh;
 }
 
 .bannerimg
 {
-  max-width: fit-content;
+  // max-width: fit-content;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,7 @@ a:hover {
   text-align: center;
   padding-top: 3%;
   img{
-    width: 100%;
+    width: 94%;
   }
 }
 
@@ -106,9 +106,9 @@ a:hover {
 .mobileImg{
   color: white;
   text-align: center;
-  padding-top: 9%;
+  padding-top: 7%;
   img{
-    width: 70%;
+    width: 75%;
   }
 } 
 .mobile_with_hand {
@@ -232,11 +232,12 @@ img{
     vertical-align: middle;
     cursor: pointer;
     font-weight: 200;
+    font-size: 90%;
 }
 
 @media (min-width:1000px) {
   .bannertext2 {
-    font-size: 15px;
+    font-size: 90%;
     font-weight: bolder;
     //width: 115px;
   }
@@ -307,7 +308,44 @@ img{
   width: 40%;
 }
 
+.mobileView{
+  display: none;
+}
+
+.hiddenBlock{
+  display: inline;
+}
+
+.generateLink{
+  cursor: pointer;padding:0;color: white; text-align: left; font-weight: bold; font-size: 75%;
+}
+
 @media screen and (max-width: 500px) {
+  .mobileView{
+    display: inline;
+  }
+
+  .generateLink{
+    cursor: pointer;padding:0;color: white; text-align: left; font-weight: bold; 
+    font-size: smaller;
+    width: 28vw;
+  }
+
+  .bannertext2{
+    margin-top: 5%;
+    height: 40px;
+    //font-size: 15px;
+    // font-weight: bolder;
+    // color: rgb(4, 10, 88);
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: 200;
+}
+  
+  .hiddenBlock{
+    display: none;
+  }
+
     .levelLine{
         visibility: hidden;
       }
@@ -337,11 +375,12 @@ img{
       }
     
     .banner{
-        //background-image: url("/assets/image/BackImg.jpg");
-        background-image:linear-gradient(to right, rgb(0, 195, 255), rgb(4, 10, 88));
-        width: 100%;
-        height: 100%;
+        background-image: url("/assets/image/background.png");
+        //background-image:linear-gradient(to right, rgb(0, 195, 255), rgb(4, 10, 88));
+        width: auto;
+        height: auto;
         overflow: hidden;
+        padding:0;
     }
     
     .bannertext1{
@@ -353,11 +392,12 @@ img{
         margin-top: 0%;
         text-align: center;
         width: auto;
+        padding:0;
         img{
           vertical-align: middle;
           width: 30%;
           height: auto; 
-          
+          padding:0;
       }
     }
 
@@ -397,6 +437,43 @@ img{
     
     .bannertext2{
         display: none;
+    }
+
+    .mobileImg {
+      padding: 0;
+      padding-top: 15%;
+    }
+    .mobile_with_hand {
+      display: none;
+      padding:0;
+    }
+    // .bannertext1 {
+
+    //   img {
+    //     height: 28rem;
+    //     width: 38rem;
+    //   }
+    // }
+    // .enter_mobile {
+    //   width: 46rem;
+    //   margin-bottom: 1rem;
+    // }
+
+    .bannertext1 {
+      img {
+        height: 51vmax;
+        width: 66vmax;
+        max-width: 90vw;
+      }
+    }
+    .enter_mobile {
+      width: 70vmax;
+      margin-bottom: 1rem;
+      max-width: 99vw;
+    }
+    .androidImg {
+      display: none;
+      padding:0;
     }
 }
 .carousel-control-next {
@@ -505,109 +582,286 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 7rem;
   }
-  @media only screen and (device-width: 320px) {
-    .mobileImg {
-      padding: 0;
-      padding-top: 9%;
-    }
-    .mobile_with_hand {
-      display: none;
-    }
-    .bannertext1 {
-      img {
-        height: 20rem;
-        width: 26rem;
-      }
-    }
-    .enter_mobile {
-      width: 31rem;
-    }
-    .androidImg {
-      display: none;
-    }
-  }
-  @media only screen and (device-width: 360px) {
-    .mobile_with_hand {
-      display: none;
-    }
-    .bannertext1 {
-      img {
-        height: 20rem;
-        width: 30rem;
-      }
-    }
-    .enter_mobile {
-      width: 33rem;
-    }
-    .androidImg {
-      display: none;
-    }
-  }
-  @media only screen and (device-width: 375px) {
-    .mobileImg {
-      padding: 0;
-      padding-top: 9%;
-    }
-    .mobile_with_hand {
-      display: none;
-    }
-    .bannertext1 {
-      img {
-        height: 20rem;
-        width: 30rem;
-      }
-    }
-    .enter_mobile {
-      width: 37rem;
-    }
-    .androidImg {
-      display: none;
-    }
-  }
-  @media only screen and (device-width: 411px) and (device-width: 414px) {
-    .mobileImg {
-      padding: 0;
-      padding-top: 9%;
-    }
-    .mobile_with_hand {
-      display: none;
-    }
-    .bannertext1 {
-      img {
-        height: 20rem;
-        width: 34rem;
-      }
-    }
-    .enter_mobile {
-      width: 40rem;
-    }
-    .androidImg {
-      display: none;
-    }
-  }
+  // @media only screen and (device-width: 320px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .generateLink{
+  //     cursor: pointer;padding:0;color: white; text-align: left; font-weight: bold; 
+  //     font-size: smaller;
+  //     width: 29vw;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 17rem;
+  //       width: 26rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 31rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+  // @media only screen and (device-width: 360px) {
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 28rem;
+  //       width: 32rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 35rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+  // @media only screen and (device-width: 375px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 22rem;
+  //       width: 30rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 37rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
 
-  @media only screen and (device-width : 768px) {
-    // .mobileImg {
-    //   padding: 0;
-    //   padding-top: 9%;
-    // }
-    .mobile_with_hand {
-      display: none;
-    }
-    // .bannertext1 {
-    //   img {
-    //     height: 40rem;
-    //     width: 60rem;
-    //   }
-    // }
-    .enter_mobile {
-      width: 40rem;
-    }
-    .androidImg {
-      display: none;
-    }
-  }
+  // @media only screen and (device-width: 280px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 22rem;
+  //       width: 22rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 28rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
 
-  @media only screen and (device-width : 1024px) {
+  // @media only screen and (device-width: 384px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 21rem;
+  //       width: 32rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 38rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width: 414px)  {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 24rem;
+  //       width: 34rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 40rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width: 411px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 50vh;
+  //       width: 90vw;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 98vw;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width: 412px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 22rem;
+  //       width: 34rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 40rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width: 480px) {
+  //   .mobileImg {
+  //     padding: 0;
+  //     padding-top: 9%;
+  //   }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   .bannertext1 {
+  //     img {
+  //       height: 28rem;
+  //       width: 39rem;
+  //     }
+  //   }
+  //   .enter_mobile {
+  //     width: 46rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width : 768px) {
+  //   // .mobileImg {
+  //   //   padding: 0;
+  //   //   padding-top: 9%;
+  //   // }
+  //   .mobile_with_hand {
+  //     display: none;
+  //   }
+  //   // .bannertext1 {
+  //   //   img {
+  //   //     height: 40rem;
+  //   //     width: 60rem;
+  //   //   }
+  //   // }
+  //   .enter_mobile {
+  //     width: 40rem;
+  //   }
+  //   .androidImg {
+  //     display: none;
+  //   }
+  // }
+
+  // @media only screen and (device-width : 1024px) {
+  // }
+
+
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 16;
+    top: 0;
+    left: 0;
+    background-color: #166ad6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 0px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #062144;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #166ad6;
+    color: white;
+    //padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #062144;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
   }

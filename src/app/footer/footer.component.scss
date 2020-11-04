@@ -5,7 +5,7 @@
     padding-top: 62px;
     font-weight: bold;
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 20px 12px;
     z-index: 1;
     
 }
@@ -24,3 +24,64 @@ div a{
     margin-bottom: 10px;
     display: inline-block; 
 }
+
+.mobileView{
+    display: none;
+  }
+  
+  .hiddenBlock{
+    display: inline;
+  }
+  
+  .mailId{
+    text-align: center; font-size: larger;font-weight: bold;
+    color: yellow;
+  }
+
+  .footer-btn{
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    .mobileView{
+      display: inline;
+    }
+
+    .mailId{
+      text-align: center; font-size: small; 
+    }
+    
+    .hiddenBlock{
+      display: none;
+    }
+
+    .footerContainer{
+        // background: black;
+        background-color: #1a67cc;
+        color: #fff;
+        padding-top: 62px;
+        font-weight: bold;
+        overflow: hidden;
+        padding: 10px 5px;
+        z-index: 1;
+        
+    }
+    div {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    div a{
+        
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block; 
+    }
+    
+  }

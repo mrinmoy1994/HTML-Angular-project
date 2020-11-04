@@ -16,6 +16,8 @@ export class FaqComponent implements OnInit {
     {
       this.block.push(false);
     }
+
+    //document.getElementById('0').classList.add('active');
   }
 
   ngOnInit() {
@@ -26,10 +28,17 @@ export class FaqComponent implements OnInit {
     debugger
     for(let i=0; i<this.block.length; i++)
     {
-      if(i === n)
+      let div = document.getElementById(i.toString());
+      if(i === n){
         this.block[i] = !this.block[i];
-      else
+        div.classList.add('active');
+      }
+      else{
         this.block[i] = false;
+        if(div.classList.contains('active'))
+          div.classList.remove('active')
+      }
+        
     }
   }
 }

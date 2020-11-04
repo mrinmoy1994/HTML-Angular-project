@@ -14,7 +14,6 @@ import { LegalityComponent } from './legality/legality.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LinkFormComponent } from './link-form/link-form.component';
 import { SpinnerComponent } from './spinner/spinner.component';
-import { SideTestComponent } from './side-test/side-test.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LevelComponent } from './level/level.component';
@@ -27,6 +26,7 @@ import { MaintainanceComponent } from './maintainance/maintainance.component';
 import { ModalComponent } from './modal/modal.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { SidebarModule } from 'ng-sidebar';
+import { FpsComponent } from './fps/fps.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,6 @@ import { SidebarModule } from 'ng-sidebar';
     ContactUsComponent,
     LinkFormComponent,
     SpinnerComponent,
-    SideTestComponent,
     LevelComponent,
     GiftsComponent,
     BonusComponent,
@@ -50,7 +49,8 @@ import { SidebarModule } from 'ng-sidebar';
     WhycaptainxComponent,
     UserguideComponent,
     MaintainanceComponent,
-    ModalComponent
+    ModalComponent,
+    FpsComponent
   ],
   imports: [
     BrowserModule,

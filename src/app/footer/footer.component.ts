@@ -19,8 +19,43 @@ export class FooterComponent implements OnInit {
     this.router.navigateByUrl("/aboutus");
   }
 
+  onLegality(){
+    this.router.navigateByUrl("/legality");
+  }
+
+  onFps(){
+    this.router.navigateByUrl("/fps");
+  }
+  
+  onHomeClick() {
+    this.router.navigateByUrl("/home");
+  }
+
+  onWhyCaptainx(){
+    this.router.navigateByUrl("/whycaptainx")
+  }
+
+  onPrivacy(){
+    this.router.navigateByUrl("/privacy")
+  }
+  onTerms(){
+    this.router.navigateByUrl("/terms")
+  }
+
+  onGuide(){
+    this.router.navigateByUrl("/userguide")
+  }
+
+  onFAQ(){
+    this.router.navigateByUrl("/faq")
+  }
+
+  onReferalClick() {
+    this.router.navigateByUrl("/aboutus");
+  }
+
   facebook(){
-    window.location.href='http://www.facebook.com/';
+    window.location.href='https://www.facebook.com/CaptainX-Fantasy-Cricket-104641251383849';
    // this.router.navigate('http://www.google.com/');
   }
   google(){

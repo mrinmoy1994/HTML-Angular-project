@@ -11,11 +11,24 @@ import { PlatformLocation } from '@angular/common';
 export class HeaderComponent implements OnInit {
   href: string = "";
   showHomeHeader = false;
+  toggle: boolean = false;
 
   constructor(private router: Router) { }
   onHowToPlayClick() {}
 
   ngOnInit() {
+  }
+
+  openNav() {
+    this.toggle = ! this.toggle;
+    if ( this.toggle ) {
+      document.getElementById('mySidebar').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+
+    } else {
+      document.getElementById('mySidebar').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
   }
 
   onRewardsClick(){

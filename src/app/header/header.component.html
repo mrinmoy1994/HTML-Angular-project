@@ -1,5 +1,83 @@
-<header id="myHeader" #myHeader >
-    <div class="row" style="margin: 0 !important;">
+<!-- <header id="myHeader" #myHeader > -->
+  <div id="myHeader" #myHeader style="background-color: #166ad6; color: white;">
+    <div class="row hiddenBlock" style="margin: 0 !important;">
+      <div class="col-md-5 col-sm-5 col-xs-5 bannertext2" (click)="onHomeClick()">
+        <img src="assets/image/LOGO2.png" Style="width: 20%;
+          height: auto;
+          max-width: 10rem;" />
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-2">
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1 bannertext2" style="text-align: right;font-weight: 500;"
+        (click)="onHomeClick()">
+        HOME
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1 bannertext2" (click)="onHomeClick()"
+        style="text-align: center;font-weight: 500;">
+        HOW&nbsp;TO&nbsp;PLAY
+      </div>
+      <div class="dropdown col-md-1 col-sm-1 col-xs-1 bannertext2"
+        style="text-align: left;padding-left: 2%;font-weight: 500;">
+        FEATURES
+        <div class="dropdown-content">
+          <!-- <a (click)="onRewardsClick()">Level</a>
+        <a (click)="onGiftsClick()">Gifts</a>
+        <a (click)="onBonusClick()">Bonus</a>
+        <a (click)="onRankingClick()">Ranking</a> -->
+          <!-- <a routerLink="/level">Level</a>
+        <a routerLink="/gifts">Gifts</a> -->
+          <a routerLink="/bonus">Bonus</a>
+          <!-- <a (click)="onRankingClick()">Ranking</a> -->
+        </div>
+      </div>
+      <div class="dropdown col-md-1 col-sm-1 col-xs-1 bannertext2" style="text-align: left;font-weight: 500;">
+        COMPANY&nbsp;PROFILE&nbsp;
+        <div class="dropdown-content">
+          <a routerLink="/aboutus">About Us</a>
+          <a routerLink="/whycaptainx">Why Captain X</a>
+          <a routerLink="/userguide">Captain's&nbsp;Guide</a>
+          <a routerLink="/fps">FPS</a>
+          <a routerLink="/terms">T & C</a>
+          <a routerLink="/legality">Legality</a>
+          <a routerLink="/faq">FAQ</a>
+  
+        </div>
+      </div>
+      <!-- <div class="col-md-1 bannertext2" (click)="onLoginClick()">
+            LOGIN
+          </div> -->
+    </div>
+  
+    <div class="row mobileView" style="margin: 0 !important;">
+  
+  
+      <div id="mySidebar" class="sidebar" style="text-align: left;">
+        <!-- <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a> -->
+        <a routerLink="/home">Home</a>
+        <a routerLink="/bonus">Bonus</a>
+        <a routerLink="/aboutus">About Us</a>
+        <a routerLink="/whycaptainx">Why Captain X</a>
+        <a routerLink="/userguide">Captain's&nbsp;Guide</a>
+        <a routerLink="/fps">FPS</a>
+        <a routerLink="/terms">T & C</a>
+        <a routerLink="/legality">Legality</a>
+        <a routerLink="/faq">FAQ</a>
+      </div>
+  
+      <div id="main" class="col-md-2 col-sm-2 col-xs-2">
+        <button class="openbtn" (click)="openNav()">☰</button>
+      </div>
+  
+      <div class="col-md-8 col-sm-8 col-xs-8" style="text-align: center; padding-top: 1rem;">
+        <img src="assets/image/LOGO2.png" [ngStyle]="{'width': '55%'}" />
+      </div>
+      <!-- <div class="col-md-1 bannertext2" (click)="onLoginClick()">
+            LOGIN
+          </div> -->
+    </div>
+  
+  </div>
+    <!-- <div class="row hiddenBlock" style="margin: 0 !important;">
         <div class="col-md-5 bannerlogo">
           <img style="padding-top: 3%;height: 80%; width: 40%;" src="assets/image/LOGO2.png"/>
         </div>
@@ -16,7 +94,7 @@
               <div class="dropdown-content">
                   <a routerLink="/level">Level</a>
                   <a routerLink="/gifts">Gifts</a>
-                  <a routerLink="/bonus">Bonus</a>
+                  <a routerLink="/maintainance">Bonus</a>
                   <a routerLink="/ranking">Ranking</a>
                 </div>
         </div>
@@ -32,9 +110,29 @@
 
               </div>
           </div>
-        <!-- <div class="col-md-1 bannertext2" (click)="onLoginClick()">
-          LOGIN
-        </div> -->
     </div>
+
+    <div class="row mobileView" style="margin: 0 !important;">
+
+
+      <div id="mySidebar" class="sidebar" style="text-align: left;">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/maintainance">Bonus</a>
+        <a routerLink="/aboutus">About Us</a>
+        <a routerLink="/whycaptainx">Why Captain X</a>
+        <a routerLink="/userguide">Captain's&nbsp;Guide</a>
+        <a routerLink="/terms">T & C</a>
+        <a routerLink="/legality">Legality</a>
+        <a routerLink="/faq">FAQ</a>
+      </div>
   
-</header>
+      <div id="main" class="col-md-2 col-sm-2 col-xs-2">
+        <button class="openbtn" (click)="openNav()">☰</button>
+      </div>
+  
+      <div class="col-md-8 col-sm-8 col-xs-8" style="text-align: center; padding-top: 1rem;">
+        <img src="assets/image/LOGO2.png" [ngStyle]="{'width': '45%'}" />
+      </div>
+    </div> -->
+  
+<!-- </header> -->

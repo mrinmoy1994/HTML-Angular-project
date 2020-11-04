@@ -1,5 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild, HostListener, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
+import {GoogleAnalyticsServiceService} from "../google-analytics-service.service"; // import our analytics service
+
 
 @Component({
   selector: 'app-home',
@@ -48,6 +50,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('gifts') public gifts: ElementRef;
   showModal: boolean = false;
   changeLogo = false;
+  toggle: boolean = false;
 
   public moveToGifts(): void{
     this.gifts.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
@@ -73,13 +76,14 @@ export class HomeComponent implements OnInit {
     // this.howtoplay.nativeElement.scrollIntoView();
   }
 
-  constructor(private router: Router, private ngZone: NgZone) {
+  constructor(private router: Router, private ngZone: NgZone, public googleAnalyticsService: GoogleAnalyticsServiceService) {
   }
 
   private eventOptions: boolean | { capture?: boolean, passive?: boolean };
 
   topFunction() {
-      this.myheader.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+      //this.myheader.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+      this.googleAnalyticsService.eventEmitter("userPage", "like", "userLabel", 1);
   }
 
   ngOnInit() {
@@ -89,6 +93,18 @@ export class HomeComponent implements OnInit {
     this.ngZone.runOutsideAngular(() => {
         window.addEventListener('scroll', this.scroll, <any>this.eventOptions);
     });
+  }
+
+  openNav() {
+    this.toggle = ! this.toggle;
+    if ( this.toggle ) {
+      document.getElementById('mySidebar').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+
+    } else {
+      document.getElementById('mySidebar').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
   }
 
   scroll = (): void => {
